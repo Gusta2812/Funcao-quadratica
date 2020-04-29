@@ -16,10 +16,14 @@ function calcular(){
         let delta = ((b**2) - 4*a*c)
     
     let raiz = Math.sqrt(delta)
-    let x1 = ((-b + raiz) / (2*a))
-    let x2 = ((-b -  raiz) / (2*a))
+    let x1 = (((-b) + raiz) / (2*a))
+    let x2 = (((-b) -  raiz) / (2*a))
 
-    result.innerHTML = `Delta = ${delta} </br> X + = ${x1} </br>  X - = ${x2}`
+    result.innerHTML = `Δ = b² -4.a.c </br>  
+                        Δ = ${b}² -4.${a}.${c} </br>
+                        Δ = ${delta} </br>
+                        x = -(${b}) ± √Δ / 2.${a} <br/>
+                        x+ = ${x1} </br>  x- = ${x2}`
     }
 
 }
